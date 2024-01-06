@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:04:14 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 16:10:16 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/01/06 17:42:42 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,9 @@ int		ft_putstr(char *str);
 int		ft_putdigit(long n, int base, char specifier);
 
 int		ft_putudigit(unsigned long n);
+
+int		ft_putptr(unsigned long n, char specifier);
+
+int		ptr_null(unsigned long long p, char specifier);
 
 #endif

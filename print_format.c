@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:23:19 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 16:32:13 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/01/06 18:21:16 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ int	print_format(char specifier, va_list ptr)
 		i += ft_putdigit((long)va_arg(ptr, unsigned int), 16, specifier);
 	else if (specifier == 'u')
 		i += ft_putudigit(va_arg(ptr, unsigned int));
-	else if (specifier == 'p')
-		i += ft_putptr(va_arg(ptr, unsigned int), 16)
+	else if (specifier == 'p' || specifier == 'P')
+		i += ptr_null(va_arg(ptr, unsigned long long), specifier);
 	else
 		i += write(1, &specifier, 1);
 	return (i);
