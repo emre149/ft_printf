@@ -6,13 +6,13 @@
 #    By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/06 10:59:06 by ededemog          #+#    #+#              #
-#    Updated: 2024/01/06 17:49:16 by ededemog         ###   ########.fr        #
+#    Updated: 2024/01/07 14:09:40 by ededemog         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = libftprintf.a
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -g
+CFLAGS = -Wall -Werror -Wextra
 EXEC = prog
 SRCS = ft_printf.c ft_putchar.c ft_putdigit.c ft_putstr.c print_format.c ft_putptr.c
 BONUS	=	
@@ -25,11 +25,6 @@ OBJM	=	$(MAIN:.c=.o)
 TNAME	= 	test
 
 OBJS 	= 	$(SRCS:.c=.o)
-
-NAME	= 	libftprintf.a
-
-CC		= 	clang
-CFLAGS	= 	-Wall -Wextra -Werror
 
 AR		= 	ar rc
 
