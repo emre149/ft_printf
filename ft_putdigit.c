@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 12:56:10 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 16:18:07 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/01/09 10:34:31 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_putdigit(long n, int base, char specifier)
 
 	i = 0;
 	hex = "0123456789abcdef";
-
 	if (specifier == 'X')
 		hex = "0123456789ABCDEF";
 	if (n < 0)

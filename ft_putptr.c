@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 16:25:31 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 18:10:48 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/01/09 10:34:41 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,5 @@ int	ptr_null(unsigned long long p, char specifier)
 		i += ft_putstr("0x");
 		i += ft_putptr(p, specifier);
 	}
-
 	return (i);
 }

@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:23:19 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 18:21:16 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/01/09 10:29:04 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,3 @@ int	print_format(char specifier, va_list ptr)
 		i += write(1, &specifier, 1);
 	return (i);
 }
-
-/*
-
-pointer = p 
-unsigned = u
-hexa en maj = X
-
-*/
