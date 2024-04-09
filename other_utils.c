@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:23:19 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/09 10:29:04 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/04/08 23:15:16 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,20 @@ int	print_format(char specifier, va_list ptr)
 		i += ptr_null(va_arg(ptr, unsigned long long), specifier);
 	else
 		i += write(1, &specifier, 1);
+	return (i);
+}
+
+int	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	if (!str)
+		return (write(1, "(null)", 6));
+	while (str && str[i])
+	{
+		ft_putchar((int)str[i]);
+		i++;
+	}
 	return (i);
 }

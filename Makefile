@@ -6,7 +6,7 @@
 #    By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/06 10:59:06 by ededemog          #+#    #+#              #
-#    Updated: 2024/01/07 14:09:40 by ededemog         ###   ########.fr        #
+#    Updated: 2024/04/08 23:24:17 by ededemog         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libftprintf.a
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 EXEC = prog
-SRCS = ft_printf.c ft_putchar.c ft_putdigit.c ft_putstr.c print_format.c ft_putptr.c
+SRCS = ft_printf.c ft_printf_utils.c other_utils.c
 BONUS	=	
 MAIN	=	main.c
 

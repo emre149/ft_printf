@@ -6,13 +6,11 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 16:41:26 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 18:22:02 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/04/08 23:23:38 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-#include <stdio.h>
 
 int	ft_printf(const char *format, ...)
 {
