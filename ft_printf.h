@@ -6,7 +6,7 @@
 /*   By: ededemog <ededemog@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/06 11:04:14 by ededemog          #+#    #+#             */
-/*   Updated: 2024/01/06 17:42:42 by ededemog         ###   ########.fr       */
+/*   Updated: 2024/04/15 15:57:55 by ededemog         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 int		ft_printf(const char *format, ...);
 
-int		print_format(char specifier, va_list ptr);
+int	    print_format(char *specifier, va_list ptr);
 
 int		ft_putchar(int c);
 
@@ -33,5 +33,7 @@ int		ft_putudigit(unsigned long n);
 int		ft_putptr(unsigned long n, char specifier);
 
 int		ptr_null(unsigned long long p, char specifier);
+
+int     ft_strcmp(const char *first, const char *second);
 
 #endif
